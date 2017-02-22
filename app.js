@@ -93,7 +93,7 @@ const checkResponse = (req, res) => {
     ignoreMessage(res);
     return;
   }
-  console.log("Current state: " + JSON.stringify(inMemoryState));
+  
   if (state == 1) {
     if (!content.match(CONFIRMATION_REGEX)) {
       delete inMemoryState[spaceId];
